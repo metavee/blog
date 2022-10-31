@@ -94,7 +94,7 @@ Also, it often means coming up with simple solutions with the tools closest at h
 
 This tends to result in solutions that are quick to implement and easily understood across the team.
 These are wonderful properties in a business context.
-But it also results in solutions that can lack craftsmanship.
+But it also trades off craftsmanship in favour of more practicality.
 
 I love the feeling of making something well-crafted, and **this course helped me feel the joy of programming**.
 
