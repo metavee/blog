@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "while True: do_work(); the graceful operation of multithreaded Python programs"
-# date:   2022-11-14 18:50:00 -0500
+title:  "while True: do_work(); graceful multithreaded Python programs"
+date:   2022-11-16 00:15:00 -0500
 categories: technical
 ---
 
@@ -14,6 +14,8 @@ This post is about how to make threads play nicely with your:
 - unit tests
 - REPL
 - debugger
+
+A quick summary can be found [at the bottom](#in-summary).
 
 # The Architecture
 
@@ -28,18 +30,6 @@ while True:
 
 The producer code is off in another thread, adding items to the queue to get processed.
 
-The first thing that might jump out at you is that this snippet loops infinitely.
-One straightforward fix is to watch for a special message that indicates that we should exit.
-
-```python
-while True:
-    message = inbox_queue.get()
-    if message is None:
-        break
-
-    process_message(message)
-```
-
 # Exception handling and graceful shutdown
 
 When a thread in Python hits an unhandled exception, it dies.
@@ -51,8 +41,9 @@ Vice versa if the consumer thread dies.
 The sane thing to do is to wind down all the threads at once.
 Each thread must keep checking to see whether it _should_ shut down.
 One option is to simply check if [all the other threads are still alive](https://docs.python.org/3/library/threading.html#threading.Thread.is_alive).
+**Note** that this will report `False` for threads that haven't been started yet, so be careful to only check this on threads you've already started; it may be a good idea to keep a `list` of them if you're juggling a lot.
 
-One caveat: we need to call `.get()` with a timeout, since otherwise the call blocks forever.
+One caveat: we need to call `.get()` with a timeout or use the non-blocking `.get_nowait()`, since otherwise the call blocks forever.
 
 ```python
 while True:
@@ -60,16 +51,12 @@ while True:
     if not producer_thread.is_alive():
         break
 
-    # grab from the queue with a timeout
+    # attempt to pull from queue
     try:
-        message = inbox_queue.get(timeout=0.100)
+        message = inbox_queue.get_nowait()
     except queue.Empty:
         time.sleep(0.100)
         continue
-
-    # program finished normally
-    if message is None:
-        break
 
     process_message(message)
 ```
@@ -182,14 +169,32 @@ You can then jump between all the threads and check out their local state and ca
 
 There might be some terminal debuggers out there that offer this feature, but I haven't encountered any yet.
 
-# Demo: Seeing it all together
+# In summary
 
-In summary:
-
-- use timeouts instead of letting queue gets, network requests etc. hang forever
-- check if other threads are still running with [`.is_alive()`]((https://docs.python.org/3/library/threading.html#threading.Thread.is_alive))
+- use timeouts or non-blocking requests instead of letting queue gets, network requests etc. hang forever
+- keep a list of threads that have been started, and check if they're still running with [`.is_alive()`]((https://docs.python.org/3/library/threading.html#threading.Thread.is_alive))
 - use a [threading.Event](https://docs.python.org/3/library/threading.html#threading.Event) to communicate a graceful request for shutdown
 - [set `daemon=True`]((https://docs.python.org/3/library/threading.html#threading.Thread.daemon)) on background worker threads
+- use a GUI debugger in your editor/IDE instead of `pdb`
 
+```python
+while True:
+    # check if the other thread died
+    for thread in active_threads:
+        if not thread.is_alive():
+            break
 
-<!-- TODO -->
+    # check if a graceful shutdown has been requested
+    if exit_flag.is_set():
+        break
+
+    # attempt to pull from queue
+    try:
+        message = inbox_queue.get_nowait()
+    except queue.Empty:
+        time.sleep(0.100)
+        continue
+
+    # do work
+    process_message(message) 
+```
