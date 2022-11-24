@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TIL: I'm older than most booleans"
-# date:   2022-11-20 00:15:00 -0500
+date:   2022-11-24 00:20:00 -0500
 categories: technical
 ---
 
