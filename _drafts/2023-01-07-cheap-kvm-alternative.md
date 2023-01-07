@@ -6,7 +6,7 @@ categories: hardware
 ---
 
 Currently, I work from home most days.
-My living space isn't that large so I do my work at the same space where I use my personal computer outside of work hours.
+My living space isn't very large so I do my work at the same space where I use my personal computer outside of work hours.
 
 **Problem statement**: I want to be able to easily switch over my monitor and peripherals between my work and home computers.
 
@@ -25,18 +25,15 @@ The monitor has multiple ports and if you have multiple computers plugged into i
 
 The monitor essentially solves itself, so that part is easy.
 
-For my wired keyboard and mouse on both computers, I needed to bring in a USB switch.
+For my wired keyboard and mouse on both computers, I needed to bring in [a USB switch](https://www.amazon.ca/-/en/gp/product/B07TS5JNT3/) ($24 CAD).
 This is a USB hub that is simultaneously connected to two computers.
 Similar to my monitor, it automatically switches to the right computer if both are off and one turns on.
 
 This technically works as-is, but the laptop needs a power cable, the USB switch's cable (plus a USB-A to USB-C adapter), and the HDMI cable from the monitor.
 
 Luckily there are dongles that can map all of those into a single Thunderbolt cable.
-I've used a few cheapo dongles in the past, but they tended to get quite hot if I was using them for power as well, which I didn't like.
-Currently I'm using this dongle from Apple which gets the job done.
-
-I also have a laptop stand for my desk so that I can use the work laptop as a second monitor and have the screen at a similar height to my main monitor.
-Currently I'm using this stand which can get the laptop up quite high and also leaves the space underneath relatively open, which makes it easier to clean when my desk gets dusty.
+I've used a few [all-in-one dongles](https://www.amazon.ca/-/en/gp/product/B09QKFGNS8/) ($27 CAD), though they can get hot if used for laptop charging as well.
+I find this to be slightly less of an issue with the M1 Macbook since it uses so much less power than the Intel series.
 
 ## The end result
 
@@ -44,15 +41,21 @@ When I'm ready to start my work day, I ensure my home computer is off and then p
 
 At the end of the work day, I unplug the dongle from my laptop and my home computer is ready to use (should I need it right away).
 
+**Total cost:** $51 CAD / $38 USD
+
+---
+
+# Addenda
+
 ## My work bag
 
-It's somewhat icing on the cake, but I have a few extra items that I leave in my work bag for those days when I do go into the office.
+It's icing on the cake, but I have a few extra items that I leave in my work bag for those days when I do go into the office.
 
 I have:
 
 - a backup charger
-- a slightly more portable laptop stand
-- a compact bluetooth keyboard and mouse
+- [a portable laptop stand](https://www.therooststand.com/)
+- a compact bluetooth [keyboard](https://www.logitech.com/en-ca/products/keyboards/k380-multi-device.920-011135.html) and [mouse](https://www.logitech.com/en-ca/products/mice/mx-anywhere-3.910-005833.html)
 
 None of it is essential but it makes it easy to get out of the house if that's what I need.
 
