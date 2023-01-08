@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A one-plug commute from home to work: my cheap KVM alternative"
-date:   2023-01-07 16:03:00 -0400
+date:   2023-01-07 19:19:00 -0400
 categories: hardware
 ---
 
@@ -19,27 +19,34 @@ My home computer is a desktop.
 It has lots of ports of different kinds and a Bluetooth adapter and is not really a constraint.
 
 I have a wired keyboard and mouse (both USB-A) and a single Dell Ultrasharp monitor.
-The monitor has multiple ports and if you have multiple computers plugged into it at once, it will automatically switch to whichever one is on; this is very convenient for my purposes.
 
 ## My solution: a USB switch and a dongle
 
-The monitor essentially solves itself, so that part is easy.
+My monitor has multiple ports for display cables and if you have multiple computers plugged into it at once, it will automatically switch to whichever one is on; it's basically ready to go out of the box.
+
+![Photo of monitor]({{site.baseurl}}/images/kvm/dell-ultrasharp.avif)
 
 For my wired keyboard and mouse on both computers, I needed to bring in [a USB switch](https://www.amazon.ca/-/en/gp/product/B07TS5JNT3/) ($24 CAD).
 This is a USB hub that is simultaneously connected to two computers.
 Similar to my monitor, it automatically switches to the right computer if both are off and one turns on.
 
-This technically works as-is, but the laptop needs a power cable, the USB switch's cable (plus a USB-A to USB-C adapter), and the HDMI cable from the monitor.
+![Photo of USB switch]({{site.baseurl}}/images/kvm/usb-switch.jpg)
 
-Luckily there are dongles that can map all of those into a single Thunderbolt cable.
-I've used a few [all-in-one dongles](https://www.amazon.ca/-/en/gp/product/B09QKFGNS8/) ($27 CAD), though they can get hot if used for laptop charging as well.
+This setup already works as-is, but the laptop needs a power cable, the USB switch's cable (plus a USB-A to USB-C adapter), and the HDMI cable from the monitor.
+It's still a bit annoying to plug/unplug 3 cables twice a day.
+The time it takes to do that is trivial, but it feels like a lot of loose cables to have floating around my desk when I'm not using my work computer.
+
+Luckily there are dongles that can combine all of those into a single Thunderbolt cable.
+I've used a few [all-in-one dongles](https://www.amazon.ca/-/en/gp/product/B09QKFGNS8/) ($27 CAD) that work, though they can get hot if used for laptop charging as well.
 I find this to be slightly less of an issue with the M1 Macbook since it uses so much less power than the Intel series.
+
+![Photo of USB-C dongle]({{site.baseurl}}/images/kvm/dongle.jpg)
 
 ## The end result
 
 When I'm ready to start my work day, I ensure my home computer is off and then plug the one dongle into my work laptop.
 
-At the end of the work day, I unplug the dongle from my laptop and my home computer is ready to use (should I need it right away).
+At the end of the work day, I unplug the dongle from my laptop and my home computer is ready to use whenever I need it.
 
 **Total cost:** $51 CAD / $38 USD
 
