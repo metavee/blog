@@ -38,12 +38,12 @@ Dentists seem to like this too since it frees up one of their hands.
 
 ## You can get smaller x-ray films
 
-I have a small mouth and find the bitewing x-rays to be super large and uncomfortable.
+I have a small jaw and find the bitewing x-rays to be super large and uncomfortable.
 Sometimes they make me gag, and that usually means I am more likely to gag on the next try.
 I don't like it.
 
-It turns out that my dentist has child-sized bitewings.
-They work for adults too, and I find them to be much more comfortable.
+It turns out that my dentist has smaller bitewings on hand.
+They are designed for children but work for adults too, and I find them to be much more comfortable.
 
 The main downside is that they might make it a bit harder for the dentist to get the specific images they want.
 
