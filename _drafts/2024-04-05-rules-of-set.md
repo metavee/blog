@@ -5,7 +5,6 @@ date:   2024-04-05 13:35:00 -0400
 categories: misc
 ---
 
-
 The rules of Set are simple, but hard to explain in words.
 In fact, most of the game is about one rule, which I'll refer to as **the rule**.
 Set is about finding sets of 3 cards which satisfy **the rule**.
@@ -13,10 +12,8 @@ Instead of telling you what **the rule** is, I will let you experiment and disco
 
 Let's with a simplified version of the game.
 
-From the following 4 cards, there is only 1 valid set.
-Identify it by selecting 3 cards obeying **the rule**.
-
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg)
+From the following 4 cards, only 1 valid set can be formed.
+Which 3 cards obey **the rule**?
 
 ![]({{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg)
 
@@ -24,26 +21,110 @@ Identify it by selecting 3 cards obeying **the rule**.
 
 ![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
 
-—
+![]({{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg)
 
-In the following 5 cards, 2 valid sets can be made.
-Find both of them.
+<details>
+<summary>Solution</summary>
 
-(X) (X) (X) (O) (S)
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
 
-Do you understand **the rule**?
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
 
-**The rule** has a nice property: if I pick out two cards to start building a set, then there exists only 1 card that can round out a valid set.
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
+
+<p>The 3 matching cards make a set.</p>
+
+</details>
+
+<br>
+
+---
+
+<br>
+
+In the following 4 cards, 1 valid set can be made.
+What is it?
+
+![]({{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg)
+
+![]({{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg)
+
+![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
+
+![]({{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg)
+
+<details>
+<summary>Solution</summary>
+
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
+
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg'>
+
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg'>
+
+<p>The 3 distinct cards make a set.</p>
+
+</details>
+
+That summarizes the two types of sets that can be formed.
+
+<br>
+
+---
+
+<br>
+
+**The rule** has a nice property: if I pick out any two cards, then there exists only 1 card that can round out a valid set of 3.
 
 Let's practice:
 
-(O) (O) (?)
+If we start with these 2 cards, what third card would make a set?
 
-—
+![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
 
-(O) (S) (?)
+![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
 
-—
+As a reminder, here are all types of cards we've seen so far:
+
+<p>
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
+
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg'>
+
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg'>
+</p>
+
+<details>
+<summary>Solution</summary>
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg'>
+
+<p>A third oval would make a set.</p>
+</details>
+
+<br>
+
+---
+
+<br>
+
+If we start with these 2 cards, what third card would make a set?
+
+![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
+
+![]({{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg)
+
+<details>
+<summary>Solution</summary>
+<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
+
+<p>A diamond would make a set.</p>
+</details>
+
+<br>
+
+---
+
+<br>
 
 Now let's make the game slightly more complex.
 Previously, cards had only one property: suit (shape).
@@ -60,11 +141,19 @@ Find the third card that satisfies **the rule**:
 
 (X) (XX) (?)
 
-—
+<br>
+
+---
+
+<br>
 
 (X) (OO) (?)
 
-—
+<br>
+
+---
+
+<br>
 
 You are almost ready to play.
 Cards in Set normally have 4 properties: suit, cardinality, colour and texture.
@@ -82,6 +171,6 @@ The game ends when the deck is empty and no more sets can be made.
 
 That is how to play Set!
 For online multiplayer I recommend the free and excellent [Set with Friends](https://setwithfriends.com).
-[Their code](https://github.com/ekzhang/setwithfriends) is also on Github and I adapted it to render the cards.
+Their [code](https://github.com/ekzhang/setwithfriends) is also on Github and I adapted it to render the cards.
 
 The end
