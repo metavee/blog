@@ -11,6 +11,14 @@ categories: misc
 <!-- TODO: Proper section spacing -->
 <!-- TODO: Nicer layout for showing groups of cards -->
 
+Set is a card game for 1-8 (best with 3-4).
+Here are some things I like about it:
+
+- it is conceptually very simple
+- it is weirdly difficult
+- it is played in real time, so _it is always everyone's turn_
+- it plays well online, e.g. via [Set with Friends](https://setwithfriends.com/)
+
 The rules of Set are simple, but hard to explain in words.
 In fact, most of the game is about one rule, which I'll refer to as **the rule**.
 Set is about finding sets of 3 cards which satisfy **the rule**.
