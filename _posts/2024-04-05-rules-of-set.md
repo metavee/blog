@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The rules of Set"
+title:  "(draft) The rules of Set"
 date:   2024-04-05 13:35:00 -0400
 categories: misc
 ---
@@ -10,6 +10,7 @@ categories: misc
 <!-- TODO: can we reveal the answer when clicking on the cards, instead of having a separate Solution block? Ideally without javascript -->
 <!-- TODO: Proper section spacing -->
 <!-- TODO: Nicer layout for showing groups of cards -->
+<!-- TODO: Final check on mobile -->
 
 Set is a card game for 1-8 (best with 3-4).
 Here are some things I like about it:
