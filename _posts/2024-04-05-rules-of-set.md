@@ -30,22 +30,17 @@ Let's with a simplified version of the game.
 From the following 4 cards, only 1 valid set can be formed.
 Which 3 cards obey **the rule**?
 
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg)
-
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg)
-
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
-
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg)
+{% include setcard.html card="1_purple_filled_diamond" %}
+{% include setcard.html card="1_purple_filled_diamond" %}
+{% include setcard.html card="1_purple_filled_oval" %}
+{% include setcard.html card="1_purple_filled_diamond" %}
 
 <details>
 <summary>Solution</summary>
 
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
+{% include setcard.html card="1_purple_filled_diamond" %}
+{% include setcard.html card="1_purple_filled_diamond" %}
+{% include setcard.html card="1_purple_filled_diamond" %}
 
 <p>The 3 matching cards make a set.</p>
 
@@ -60,22 +55,17 @@ Which 3 cards obey **the rule**?
 In the following 4 cards, 1 valid set can be made.
 What is it?
 
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg)
-
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg)
-
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
-
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg)
+{% include setcard.html card="1_purple_filled_diamond" %}
+{% include setcard.html card="1_purple_filled_diamond" %}
+{% include setcard.html card="1_purple_filled_oval" %}
+{% include setcard.html card="1_purple_filled_squiggle" %}
 
 <details>
 <summary>Solution</summary>
 
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg'>
+{% include setcard.html card="1_purple_filled_diamond" %}
+{% include setcard.html card="1_purple_filled_oval" %}
+{% include setcard.html card="1_purple_filled_squiggle" %}
 
 <p>The 3 distinct cards make a set.</p>
 
@@ -95,23 +85,20 @@ Let's practice:
 
 If we start with these 2 cards, what third card would make a set?
 
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
-
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
+{% include setcard.html card="1_purple_filled_oval" %}
+{% include setcard.html card="1_purple_filled_oval" %}
 
 As a reminder, here are all types of cards we've seen so far:
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg'>
+{% include setcard.html card="1_purple_filled_diamond" %}
+{% include setcard.html card="1_purple_filled_oval" %}
+{% include setcard.html card="1_purple_filled_squiggle" %}
 </p>
 
 <details>
 <summary>Solution</summary>
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg'>
+{% include setcard.html card="1_purple_filled_oval" %}
 
 <p>A third oval would make a set.</p>
 </details>
@@ -124,13 +111,12 @@ As a reminder, here are all types of cards we've seen so far:
 
 If we start with these 2 cards, what third card would make a set?
 
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
-
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg)
+{% include setcard.html card="1_purple_filled_oval" %}
+{% include setcard.html card="1_purple_filled_squiggle" %}
 
 <details>
 <summary>Solution</summary>
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
+{% include setcard.html card="1_purple_filled_diamond" %}
 
 <p>A diamond would make a set.</p>
 </details>
@@ -149,40 +135,33 @@ From now on, cards will have two properties: suit and cardinality (number).
 
 Given the two starting cards, find the third card that satisfies **the rule**:
 
-![]({{site.baseurl}}/images/set_cards/3_purple_filled_squiggle.svg)
-
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg)
+{% include setcard.html card="3_purple_filled_squiggle" %}
+{% include setcard.html card="1_purple_filled_oval" %}
 
 As a reference, here is every combination of suit and cardinality.
 The third card of the set is in here somewhere:
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/2_purple_filled_oval.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/3_purple_filled_oval.svg'>
+{% include setcard.html card="1_purple_filled_oval" %}
+{% include setcard.html card="2_purple_filled_oval" %}
+{% include setcard.html card="3_purple_filled_oval" %}
 </p>
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/2_purple_filled_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/3_purple_filled_diamond.svg'>
+{% include setcard.html card="1_purple_filled_diamond" %}
+{% include setcard.html card="2_purple_filled_diamond" %}
+{% include setcard.html card="3_purple_filled_diamond" %}
 </p>
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/2_purple_filled_squiggle.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/3_purple_filled_squiggle.svg'>
+{% include setcard.html card="1_purple_filled_squiggle" %}
+{% include setcard.html card="2_purple_filled_squiggle" %}
+{% include setcard.html card="3_purple_filled_squiggle" %}
 </p>
 
 <details>
 <summary>Solution</summary>
-<img src='{{site.baseurl}}/images/set_cards/2_purple_filled_diamond.svg'>
+{% include setcard.html card="2_purple_filled_diamond" %}
 
 <p>The 2 of diamonds would make a set.</p>
 </details>
@@ -195,13 +174,12 @@ The third card of the set is in here somewhere:
 
 As above, find the third card that satisfies **the rule**:
 
-![]({{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg)
-
-![]({{site.baseurl}}/images/set_cards/2_purple_filled_squiggle.svg)
+{% include setcard.html card="1_purple_filled_squiggle" %}
+{% include setcard.html card="2_purple_filled_squiggle" %}
 
 <details>
 <summary>Solution</summary>
-<img src='{{site.baseurl}}/images/set_cards/3_purple_filled_squiggle.svg'>
+{% include setcard.html card="3_purple_filled_squiggle" %}
 
 <p>The 3 of squiggle would make a set.</p>
 
@@ -216,27 +194,21 @@ As above, find the third card that satisfies **the rule**:
 Considering all 9 distinct cards so far, how many different sets exist?
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/2_purple_filled_oval.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/3_purple_filled_oval.svg'>
+{% include setcard.html card="1_purple_filled_oval" %}
+{% include setcard.html card="2_purple_filled_oval" %}
+{% include setcard.html card="3_purple_filled_oval" %}
 </p>
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/2_purple_filled_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/3_purple_filled_diamond.svg'>
+{% include setcard.html card="1_purple_filled_diamond" %}
+{% include setcard.html card="2_purple_filled_diamond" %}
+{% include setcard.html card="3_purple_filled_diamond" %}
 </p>
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_squiggle.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/2_purple_filled_squiggle.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/3_purple_filled_squiggle.svg'>
+{% include setcard.html card="1_purple_filled_squiggle" %}
+{% include setcard.html card="2_purple_filled_squiggle" %}
+{% include setcard.html card="3_purple_filled_squiggle" %}
 </p>
 
 <details>
@@ -258,11 +230,9 @@ Cards in Set actually have 4 properties: suit, cardinality, colour and texture.
 <!-- TODO: are these the correct set names (and value names)? -->
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/1_red_filled_squiggle.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/2_purple_outlined_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/3_green_striped_oval.svg'>
+{% include setcard.html card="1_red_filled_squiggle" %}
+{% include setcard.html card="2_purple_outlined_diamond" %}
+{% include setcard.html card="3_green_striped_oval" %}
 </p>
 
 There are 4 suits, but the same principles apply as before.
@@ -273,49 +243,41 @@ Let's work out one last example.
 
 Given the following two cards, what third would form a set?
 
-![]({{site.baseurl}}/images/set_cards/2_purple_outlined_oval.svg)
+{% include setcard.html card="2_purple_outlined_oval" %}
 
-![]({{site.baseurl}}/images/set_cards/3_green_striped_oval.svg)
+{% include setcard.html card="3_green_striped_oval" %}
 
 With 4 different properties, there are slightly too many cards to show you every possibility.
 I'll draw a few from the deck, and hopefully the matching card is in there somewhere.
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/1_green_filled_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/2_purple_striped_oval.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_purple_filled_oval.svg'>
+{% include setcard.html card="1_green_filled_diamond" %}
+{% include setcard.html card="2_purple_striped_oval" %}
+{% include setcard.html card="1_purple_filled_oval" %}
 </p>
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/3_red_outlined_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_green_striped_oval.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_red_outlined_oval.svg'>
+{% include setcard.html card="3_red_outlined_diamond" %}
+{% include setcard.html card="1_green_striped_oval" %}
+{% include setcard.html card="1_red_outlined_oval" %}
 </p>
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/1_green_striped_diamond.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_red_filled_squiggle.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/3_purple_filled_oval.svg'>
+{% include setcard.html card="1_green_striped_diamond" %}
+{% include setcard.html card="1_red_filled_squiggle" %}
+{% include setcard.html card="3_purple_filled_oval" %}
 </p>
 
 <p>
-<img src='{{site.baseurl}}/images/set_cards/2_purple_outlined_squiggle.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/2_green_outlined_oval.svg'>
-
-<img src='{{site.baseurl}}/images/set_cards/1_red_striped_diamond.svg'>
+{% include setcard.html card="2_purple_outlined_squiggle" %}
+{% include setcard.html card="2_green_outlined_oval" %}
+{% include setcard.html card="1_red_striped_diamond" %}
 </p>
 
 <details>
 <summary>Solution</summary>
 
-<img src='{{site.baseurl}}/images/set_cards/1_red_filled_oval.svg'>
+{% include setcard.html card="1_red_filled_oval" %}
 
 <p>Oops!
 Looks like the matching card was still in the deck.
