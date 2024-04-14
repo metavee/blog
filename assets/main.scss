@@ -39,3 +39,30 @@ $on-laptop:        800px;
 @import "minima";
 
 video { max-width: 100%; vertical-align: middle; }
+
+.checkbox-card {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.checkbox-card input[type='checkbox'] {
+    display: none; /* Hide the actual checkbox */
+}
+
+.checkbox-card label {
+    display: block;
+    border: 3px solid transparent;
+    padding: 10px;
+}
+
+.checkbox-card input[type='checkbox']:checked + label {
+    border-color: red; /* Default for any selection */
+    border-radius: 10px;
+}
+.checkbox-card input[type='checkbox'].correct:checked + label {
+    border-color: blue; /* Only for correct selections */
+}
+.checkbox-card input[type='checkbox'].neutral:checked + label {
+    border-color: darkolivegreen; /* ambiguous selections */
+}

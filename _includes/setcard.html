@@ -1,1 +1,6 @@
-<img src='{{site.baseurl}}/images/set_cards/{{ include.card }}.svg' style='max-width: 30%;'>
+<div class="checkbox-card" style='max-width: {{ include.mw | default: "25%" }};'>
+    <input type="checkbox" id="{{ include.id }}" name="{{ include.id }}" class="{{ include.class | default '' }}">
+    <label for="{{ include.id }}" class="card">
+        <img src='{{site.baseurl}}/images/set_cards/{{ include.card }}.svg'>
+    </label>
+</div>
