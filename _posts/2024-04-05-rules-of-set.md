@@ -5,11 +5,8 @@ date:   2024-04-05 13:35:00 -0400
 categories: misc
 ---
 
-<!-- TODO: give the cards mouseover highlight -->
 <!-- TODO: make the cards look nicer -->
-<!-- TODO: can we reveal the answer when clicking on the cards, instead of having a separate Solution block? Ideally without javascript -->
-<!-- TODO: Proper section spacing -->
-<!-- TODO: Nicer layout for showing groups of cards -->
+<!-- TODO: make the solution blocks look nicer -->
 <!-- TODO: Final check on mobile -->
 
 Set is a card game for 1-8 (best with 3-4).
@@ -29,7 +26,7 @@ Let's with a simplified version of the game.
 
 From the following 4 cards, only 1 valid set can be formed.
 Select the 3 cards that obey **the rule**.
-This page is _lightly_ interactive.
+This page is _slightly_ interactive and you can click on cards to select them.
 
 <form>
 {% include setcard.html id="1-1" card="1_purple_filled_diamond" class="correct" %}
@@ -249,23 +246,17 @@ If this seems uncertain, we can verify the answer.
 Looking at the starting two cards, we can work through the properties one-by-one.
 </p>
 
-<p>Suit: the two starting cards are both ovals.
-The third card must also be an oval.
-</p>
+<ul>
+<li><b>Suit:</b> the two starting cards are both ovals.</li>
+<li><b>Cardinality:</b> the two starting cards have different cardinalities (2 and 3).
+The third card must have a cardinality of 1.</li>
+<li><b>Colour:</b> the two starting cards have different colours (purple and green).
+The third card must be red.</li>
+<li><b>Texture:</b> the two starting cards have different textures (empty outline and striped).
+The third card must have a solid fill texture.</li>
+</ul>
 
-<p>Cardinality: the two starting cards have different cardinalities (2 and 3).
-The third card must have a cardinality of 1.
-</p>
-
-<p>Colour: the two starting cards have different colours (purple and green).
-The third card must be red.
-</p>
-
-<p>Texture: the two starting cards have different textures (empty outline and striped).
-The third card must have a solid fill texture.
-</p>
-
-<p>Therefore, we know that the the matching card will be the red, solid-filled, ace of ovals.</p>
+<p>Therefore, we know that the the matching card will be the <b>red, solid-filled, ace of ovals.</b></p>
 </details>
 
 {% include sectionbreak.html %}
@@ -281,7 +272,7 @@ If you pick a valid set, you keep the cards as points, remove them from the tabl
 In the rare case that no sets can be made, an additional 3 cards can be turned face up (bringing the total up to 15).
 The game ends when the deck is empty and no more sets can be made.
 
----
+{% include sectionbreak.html %}
 
 For online multiplayer I recommend the free and excellent [Set with Friends](https://setwithfriends.com).
 Their [code](https://github.com/ekzhang/setwithfriends) is also on Github and I adapted it to render the cards.
