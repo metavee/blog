@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "(draft) The rules of Set"
-date:   2024-04-05 13:35:00 -0400
+title:  "The rules of Set"
+date:   2024-04-22 23:31:00 -0400
 categories: misc
 ---
-
-<!-- TODO: make the cards look nicer -->
 
 Set is a card game for 1-8 (best with 3-4).
 Here are some things I like about it:

@@ -56,10 +56,14 @@ video { max-width: 100%; vertical-align: middle; }
     padding: 10px;
 }
 
+.checkbox-card input[type='checkbox'] + label {
+    border-color: black;
+    border-radius: 10px;
+}
+
 .checkbox-card input[type='checkbox']:checked + label {
     border-color: red; /* Default for any selection */
     box-shadow: 0 0px 16px rgba(255, 0, 0, 0.5);
-    border-radius: 10px;
 }
 .checkbox-card input[type='checkbox'].correct:checked + label {
     border-color: blue; /* Only for correct selections */
