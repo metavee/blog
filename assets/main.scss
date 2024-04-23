@@ -69,3 +69,32 @@ video { max-width: 100%; vertical-align: middle; }
     border-color: darkolivegreen; /* ambiguous selections */
     box-shadow: 0 0px 16px rgba(85, 107, 47, 0.5);
 }
+
+
+/* Style for the <details> element */
+details {
+    background-color: #f0f8ff; /* Soft blue background for distinction */
+    padding: 15px; /* Padding around the content */
+    margin: 10px 0; /* Vertical margin for spacing, no horizontal margin */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border: 1px solid #dedede; /* Light gray border */
+}
+
+/* Style for the <summary> element */
+summary {
+    font-weight: bold; /* Makes the summary text bold */
+    margin-bottom: 10px; /* Margin below the summary for spacing */
+    cursor: pointer; /* Indicates the element is interactive */
+    color: #204a87; /* Darker blue for the summary text */
+    padding: 5px; /* Padding inside the summary */
+    border-radius: 3px; /* Rounded corners */
+}
+
+/* Additional styling for the content inside <details> */
+details p {
+    margin-top: 0; /* Ensures there's no additional space at the top */
+    padding: 0 5px; /* Left and right padding */
+    line-height: 1.6; /* Improved line-spacing for readability */
+    color: #333; /* Dark gray color for improved readability */
+}

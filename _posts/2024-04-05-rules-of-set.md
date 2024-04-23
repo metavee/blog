@@ -6,8 +6,6 @@ categories: misc
 ---
 
 <!-- TODO: make the cards look nicer -->
-<!-- TODO: make the solution blocks look nicer -->
-<!-- TODO: Final check on mobile -->
 
 Set is a card game for 1-8 (best with 3-4).
 Here are some things I like about it:
