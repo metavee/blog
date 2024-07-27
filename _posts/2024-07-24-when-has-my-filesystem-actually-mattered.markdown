@@ -33,16 +33,27 @@ Anyway, we could keep adding more layers to the analogy (like folders and subfol
 </p>
 </details>
 
+&nbsp;
 
-## Some filesystems that you may have used
+<details>
+<summary>Some filesystems that you may have used</summary>
 
+<p>
 Historically, different OSes have developed their own filesystems, often in a proprietary way. There are several major lineages of filesystems, made messy by business partnerships forming and breaking, and the inevitable spread of technological ideas between companies. Here are a few filesystems you might encounter today.
+</p>
 
+<p>
 For Windows, NTFS has been the predominant filesystem since the 2000s, but the simpler FAT family of filesystems (FAT12, FAT16, FAT32, ExFAT) which were used in earlier Windows and DOS systems still appear on USB sticks and SD cards today due to their wide interoperability.
+</p>
 
+<p>
 For Mac OS and other Apple devices, APFS was introduced in 2017 and is still the main filesystem in use. It replaces HFS+, which had been in use since 1998 (predating OS X) and was itself preceded by HFS.
+</p>
 
+<p>
 For Linux systems, it's possible to run the OS on top of many different filesystems, but ext4 is a common default at the time of writing and was designed primarily to support Linux. As you might guess from the name, it comes after ext, ext2, and ext3. Btrfs is a Linux filesystem with a more modern design than ext4, but today it is only the default in certain Linux distributions like Fedora.
+</p>
+</details>
 
 Many different filesystem formats have been invented across time and space. Look at how long this [list of _default_ filesystems](https://en.wikipedia.org/wiki/List_of_default_file_systems) is, let alone [this more complete list](https://en.wikipedia.org/wiki/List_of_file_systems). There are so many!
 
