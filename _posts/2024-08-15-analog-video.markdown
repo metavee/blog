@@ -46,4 +46,4 @@ Surprisingly, this worked on most (but not all) monitors that I tried!
 
 There were other, non-EDID pins on the VGA side that were left unconnected, and this was also more or less fine.
 
-In spite of using an especially 25-pin connector, most of the pins on the Olivetti side were also either different kinds of ground or else not connected at all (as can be seen from my wiring photo).
+In spite of using an unusually large 25-pin connector, most of the pins on the Olivetti side were also either different kinds of ground or else not connected at all (as can be seen from my wiring photo).
