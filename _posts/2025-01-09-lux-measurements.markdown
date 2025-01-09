@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What I learned from logging lux"
-date:   2025-01-09 01:54:00 -0500
+date:   2025-01-09 00:54:00 -0500
 categories: misc
 ---
 
